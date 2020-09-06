@@ -9,7 +9,7 @@ Write-Host "table is $table"
 #Download installer
 $src = $filename
 Write-Host "src is $src"
-$dst = $env:temp + '\VBANG\' + 'AmazonRedshiftODBC64.msi'
+$dst = $env:temp + 'AmazonRedshiftODBC64.msi'
 Write-Host "dst is $dst"
 Invoke-WebRequest $src -OutFile $dst
 
